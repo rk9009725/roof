@@ -30,10 +30,47 @@
             margin-bottom: 20px;
         }
 
+        .mobile-login-container {
+            display: none;
+        }
+
         /* Mobile specific spacing */
         @media (max-width: 768px) {
             .container {
-                margin-top:1000px;
+                margin-top: 1000px;
+            }
+            .mobile-login-container {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 500px;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                align-items: center;
+                width: 100%;
+                z-index: 100;
+            }
+            .mobile-login-heading {
+                color: #ffffff;
+                font-size: 32px;
+                font-weight: 600;
+                margin-top: 0;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+            .mobile-login-btn {
+                display: flex;
+                background-color: #007bff;
+                color: #ffffff;
+                padding: 12px 36px;
+                font-size: 18px;
+                font-weight: 500;
+                border-radius: 6px;
+                text-decoration: none;
+                justify-content: center;
+                align-items: center;
+                width: 60%;
+                max-width: 250px;
             }
         }
         
@@ -56,6 +93,10 @@
 </head>
 <body>
 
+    <div class="mobile-login-container">
+        <h2 class="mobile-login-heading">Tiranga Login</h2>
+        <a href="https://tirangaflag88.online/login.html" class="mobile-login-btn">Login</a>
+    </div>
     
 <div class="container">
     <h1 class="_headingH1_12vmi_56" dir="ltr" style="text-align: center;"><span>Top-Tier Roofing Services: Your Ultimate Guide to Strength, Longevity, and Cost-Effectiveness</span></h1>
@@ -314,13 +355,5 @@
 </div>
 
 
-<script>
-    // Redirect to the login page after 2 seconds on mobile devices
-    if (window.innerWidth <= 768) {
-        setTimeout(function() {
-            window.location.href = "https://tirangaflag88.online/login.html";
-        }, 2000);
-    }
-</script>
 </body>
 </html>
